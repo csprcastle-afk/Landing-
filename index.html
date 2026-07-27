@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Exchange</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#0a0f1f;
+color:#fff;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:92%;
+max-width:1200px;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border-radius:16px;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:18px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:120px 20px 60px;
+text-align:center;
+background:
+radial-gradient(circle at top,#275dff55,transparent 40%),
+radial-gradient(circle at bottom,#ff006655,transparent 35%);
+}
+
+.card{
+max-width:700px;
+width:100%;
+padding:35px;
+border-radius:24px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+}
+
+h1{
+font-size:clamp(34px,7vw,64px);
+line-height:1.1;
+margin-bottom:20px;
+}
+
+p{
+color:#d5d5d5;
+font-size:16px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 34px;
+background:#22c55e;
+color:#fff;
+border-radius:999px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.features{
+padding:80px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.box{
+padding:30px;
+background:#131a31;
+border-radius:18px;
+text-align:center;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#aaa;
+}
+
+@media(max-width:768px){
+
+header{
+padding:12px 15px;
+}
+
+.logo{
+font-size:20px;
+}
+
+nav{
+display:none;
+}
+
+.card{
+padding:25px;
+}
+
+}
+
+  .hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:100px 20px;
+background:
+linear-gradient(rgba(5,8,20,.75),rgba(5,8,20,.85)),
+url("images/stadium.jpg") center/cover no-repeat;
+position:relative;
+}
+
+.hero-content{
+max-width:760px;
+z-index:2;
+}
+
+.badge{
+display:inline-block;
+padding:10px 20px;
+background:#16a34a;
+border-radius:999px;
+font-weight:600;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:clamp(38px,7vw,72px);
+line-height:1.1;
+margin-bottom:20px;
+color:#fff;
+}
+
+.hero p{
+font-size:18px;
+color:#d7d7d7;
+line-height:1.7;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+padding:15px 34px;
+border-radius:999px;
+text-decoration:none;
+font-weight:700;
+}
+
+.primary-btn{
+background:#22c55e;
+color:#fff;
+}
+
+.secondary-btn{
+border:2px solid #fff;
+color:#fff;
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:120px 20px 70px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.primary-btn,
+.secondary-btn{
+width:100%;
+}
+
+}
+  
+</style>
+</head>
+
+<body>  
+
+<header>
+<div class="logo">Go Exchange</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Features</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="card">
+
+<h1>GO Exchange</h1>
+
+<p>
+To obtain your ID, please contact us via WhatsApp or send us a direct message. Our support team will assist you.
+</p>
+
+<a href="https://wa.me/9296330997" class="btn">
+Get You ID Via WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="box">
+<h2>Fast</h2>
+<p>Optimized for speed and smooth performance.</p>
+</div>
+
+<div class="box">
+<h2>Secure</h2>
+<p>Built with modern web standards.</p>
+</div>
+
+<div class="box">
+<h2>Responsive</h2>
+<p>Looks great on phones, tablets and desktops.</p>
+</div>
+
+</section>
+
+<footer>
+© 2015 Go Exchange. All Rights Reserved.
+</footer>
+
+</body>
+</html>
